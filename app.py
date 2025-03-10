@@ -189,7 +189,7 @@ if checkBtn:
 
 
 # when click on hint button, so the popover will show
-if hintBtn or passStrength in [3, 4,2,1]:
+if hintBtn :
     #save the randon generated password in session state
     st.session_state.generatePass = generatePassword(8)
     st.markdown(
